@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="head flexed">
+            <h1>Calculator</h1>
+        </div>
+        <div class="calculator flexed column">
+            <div class="outputBox flexed">
+                <span id="output">0</span>
+            </div>
+            <div class="c-button">
+                <button id="c" onclick="reset()">C</button>
+                <button id="exp" onclick="exp()">X&sup2</button>
+                <button class="orange" id="divide" onclick="divide()">/</button>
+            </div>
+            <div class="row">
+                <button id="seven" onclick="conCat(this)">7</button>
+                <button id="eight" onclick="conCat(this)">8</button>
+                <button id="nine" onclick="conCat(this)">9</button>
+                <button class="orange" id="multiply" onclick="multiply()">*</button>
+            </div>
+            <div class="row">
+                <button id="four" onclick="conCat(this)">4</button>
+                <button id="five" onclick="conCat(this)">5</button>
+                <button id="six" onclick="conCat(this)">6</button>
+                <button class="orange" id="minus" onclick="minus()">-</button>
+            </div>
+            <div class="row">
+                <button id="one" onclick="conCat(this)">1</button>
+                <button id="two" onclick="conCat(this)">2</button>
+                <button id="three" onclick="conCat(this)">3</button>
+                <button class="orange" id="add" onclick="plus()">+</button>
+            </div>
+            <div class="row">
+                <button id="negative" onclick="conCat(this)">-</button>
+                <button id="zero" onclick="conCat(this)">0</button>
+                <button id="decimal" onclick="conCat(this)">.</button>
+                <button class="orange" id="equal" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
